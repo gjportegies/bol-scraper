@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer')
 
 const initScraper = async () => {
 	// you can add { devtools: true } to in the launch function to see live actions
-	const browser = await puppeteer.launch()
+	const browser = await puppeteer.launch({ devtools: true })
 	const scrapeOne = await findPriceByItem(browser)
 	const scrapeMany = findPricesByItems(scrapeOne)
 	const close = closeBrowser(browser)
@@ -19,15 +19,18 @@ const findPriceByItem = async browser => {
 		waitUntil: 'networkidle0'
 	})
 	return async searchTerm => {
-		// await page.waitFor(3000) You can add a delay when dealing with many searches
+		await page.waitFor(13000)
 		await page.type('#searchfor', searchTerm)
 		await page.select('#product_select', 'books_all')
 		await page.click('input.search-btn')
 		await page.waitForNavigation({ waitUntil: 'networkidle0' })
 		try {
+			// Trying to click on the filters
 			await clickInput(page, 'input#facet_1426')
 			await clickInput(page, 'input#facet_8293')
+			// Wait for products to load
 			await page.waitForSelector('a.product-title')
+			// Get the price of the first item
 			return await page.$eval(
 				'.price-block__highlight',
 				priceBlock =>

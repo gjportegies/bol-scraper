@@ -1,6 +1,8 @@
 # Bol Scraper
 A little server side scraper build with NodeJS and [Puppeteer](https://github.com/GoogleChrome/puppeteer) that searches a price for books on the [bol.com](https://bol.com) platform.
 
+![Puppeteer in Actions](https://github.com/timruiterkamp/bol-scraper/blob/master/puppeteer.png) 
+
 ## Installation
 ```bash
 git clone https://github.com/timruiterkamp/Bol-scraper.git  
@@ -44,6 +46,8 @@ await page.select('#product_select', 'books_all')
 
   
 Or filter by custom filters in the sidebar of a page.
+  
+![Filter by item category](https://github.com/timruiterkamp/bol-scraper/blob/master/filter.png) 
 
 ```Javascript
 // Just look up the input id's of the filters and you can use them like this:
@@ -58,6 +62,7 @@ await clickInput(page, 'input#facet_8293')
 ## To Do: 
 - [X] Support a list of filters
 - [ ] Create more examples 
+- [ ] Get price of the highest / lowers item
 
 ## Code description
 | Files   |      Description      |
