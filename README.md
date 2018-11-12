@@ -34,7 +34,7 @@ Result after the scraper is done:
   
 To retrieve a certain filter, open your element inspector and inspect the dropdown filter near the searbar as seen below.
   
-![Filter by category]('https://github.com/timruiterkamp/bol-scraper/blob/master/searchbar.png') 
+![Filter by category](https://github.com/timruiterkamp/bol-scraper/blob/master/searchbar.png) 
   
 ``` Javascript 
 // Look up only a certain type of items, in this case books.
