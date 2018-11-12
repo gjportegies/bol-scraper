@@ -46,8 +46,6 @@ await page.select('#product_select', 'books_all')
 
   
 Or filter by custom filters in the sidebar of a page.
-  
-![Filter by item category](https://github.com/timruiterkamp/bol-scraper/blob/master/images/filters.png) 
 
 ```Javascript
 // Just look up the input id's of the filters and you can use them like this:
