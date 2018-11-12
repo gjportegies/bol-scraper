@@ -1,7 +1,7 @@
 # Bol Scraper
 A little server side scraper build with NodeJS and [Puppeteer](https://github.com/GoogleChrome/puppeteer) that searches a price for books on the [bol.com](https://bol.com) platform.
 
-![Puppeteer in Actions](https://github.com/timruiterkamp/bol-scraper/blob/master/images/puppteer-ss.png) 
+![Puppeteer in Actions](https://github.com/timruiterkamp/bol-scraper/blob/master/images/puppeteer-ss.png) 
 
 ## Installation
 ```bash
