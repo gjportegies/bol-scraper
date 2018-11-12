@@ -12,7 +12,7 @@ nodemon index
 ## Usage 🚀
 Currently the scraper needs an array of objects with a title so it can lookup the books by title and find it's price. The price is now cut off at the first number, so keep in mind you will only get whole numbers.
 
-```JSON
+```Js
 [
     { 
         title: 'Jaws'
@@ -20,7 +20,7 @@ Currently the scraper needs an array of objects with a title so it can lookup th
 ]
 ```
 Result after the scraper is done:
-```JSON
+```Js
 [ 
     { 
         title: 'Jaws', 
