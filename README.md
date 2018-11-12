@@ -12,7 +12,7 @@ nodemon index
 ## Usage 🚀
 Currently the scraper needs an array of objects with a title so it can lookup the books by title and find it's price. The price is now cut off at the first number, so keep in mind you will only get whole numbers.
 
-```Js
+```J
 [
     { 
         title: 'Jaws'
@@ -34,7 +34,7 @@ Result after the scraper is done:
   
 To retrieve a certain filter, open your element inspector and inspect the dropdown filter near the searbar as seen below.
   
-![Filter by category]('https://github.com/timruiterkamp/bol-scraper/blob/master/searchbar.png')  
+![Filter by category]('https://github.com/timruiterkamp/Bol-scraper/blob/master/searchbar.png')  
   
 ``` Javascript 
 // Look up only a certain type of items, in this case books.
